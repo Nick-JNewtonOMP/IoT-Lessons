@@ -1,59 +1,49 @@
-# IOT Lessons
+# IOT Lessons | บทเรียน IOT
 
 ---
 
-## Lesson 1 — Introduction to IoT
-In this lesson there was no code needed.
-But please feel free to check out 
+## Lesson 1 — Introduction to IoT | บทที่ 1 — แนะนำ IoT
+In this lesson there was no code needed. | ในบทเรียนนี้ไม่จำเป็นต้องใช้โค้ด
+But please feel free to check out | แต่สามารถดูข้อมูลเพิ่มเติมได้ที่
 [Autodesk Instructables](https://www.instructables.com/)
 
 ---
 
-## Lesson 2 — Hardware and software
+## Lesson 2 — Hardware and software | บทที่ 2 — ฮาร์ดแวร์และซอฟต์แวร์
 
-### 1) One Blinking LED
-
+### 1) One Blinking LED | หนึ่ง LED กะพริบ
 ```cpp
-
-// Define variables
+// Define variables | กำหนดตัวแปร
 #define LED_PIN_1 0
-
 void setup() {
-  // Put your setup code here, to run once:
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
   pinMode(LED_PIN_1,OUTPUT); 
 }
-
 void loop() {
-  // Put your main code here, to run repeatedly:
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
     digitalWrite(LED_PIN_1,HIGH);
     delay(1000);
     digitalWrite(LED_PIN_1,LOW);
     delay(1000);
-
 }
 ```
-### 1) Multiple Blinking LEDs
 
+### 2) Multiple Blinking LEDs | หลาย LED กะพริบ
 ```cpp
-
-// Define variables
+// Define variables | กำหนดตัวแปร
 #define LED_PIN_1 0
 #define LED_PIN_2 25
 #define LED_PIN_3 26
 #define LED_PIN_4 27
-
 void setup() {
-  // Put your setup code here, to run once:
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
   pinMode(LED_PIN_1,OUTPUT);
   pinMode(LED_PIN_2,OUTPUT);
   pinMode(LED_PIN_3,OUTPUT);
   pinMode(LED_PIN_4,OUTPUT);
-  
-  
 }
-
 void loop() {
-  // Put your main code here, to run repeatedly:
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
     digitalWrite(LED_PIN_1,HIGH);
     delay(1000);
     digitalWrite(LED_PIN_2,HIGH);
@@ -62,20 +52,17 @@ void loop() {
     delay(1000);
     digitalWrite(LED_PIN_4,HIGH);
     delay(1000);
-
     digitalWrite(LED_PIN_1,LOW);
     digitalWrite(LED_PIN_2,LOW);
     digitalWrite(LED_PIN_3,LOW);
     digitalWrite(LED_PIN_4,LOW);
     delay(2000);
-
 }
 ```
 
 ---
 
-## Lesson 3 — Hardware and software
-
+## Lesson 3 — | บทที่ 3 —
 
 
 
