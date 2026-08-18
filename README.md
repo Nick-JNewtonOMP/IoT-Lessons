@@ -72,5 +72,12 @@ void loop() {
 }
 ```
 
+---
 
-```
+## Lesson 3 — Hardware and software
+
+
+
+
+
+
