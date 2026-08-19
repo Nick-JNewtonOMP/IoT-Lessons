@@ -172,23 +172,6 @@ void loop() {
 </details>
 
 
-### 4) Christmas tree with code: Make it yours! | 
-
-<details>
-<summary>💡 Suggestion 0 — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
-<br>
-Use the wiring diagrams you made earlier and add what you want. For example a blue LED.
-</details>
-
-
-
-
-<details>
-<summary>💡 Suggestion 2 — Code | คลิกเพื่อดูคำใบ้ — โค้ดเฉลย</summary>
-<br>
-Controll all LEDs of the tree. Be mindfull of the pins you use on the ESP32.
-</details>
-
 
 ### 4) Christmas tree with code: Make it yours! | ต้นคริสต์มาสพร้อมโค้ด: ทำให้เป็นของคุณเอง!
 
