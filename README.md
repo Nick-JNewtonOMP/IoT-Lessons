@@ -85,8 +85,18 @@ void loop() {
 
 </details>
 
-### 2) Christmas tree with code | 
+### 2) Christmas tree with code: Blinking the top light | 
 
+<details>
+<summary>💡 Hint — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
+
+<br>
+
+<img width="662" height="567" alt="image" src="https://github.com/user-attachments/assets/227cdb49-edae-48eb-bf94-c2b49ecb3dec" />
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+
+</details>
 
 
 
