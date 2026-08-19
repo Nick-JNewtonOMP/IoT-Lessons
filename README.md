@@ -122,7 +122,9 @@ void loop() {
     delay(1000);
 }
 ```
+<details>
 
+  
 ### 3) Christmas tree with code: Adding decorations | 
 
 <details>
@@ -133,7 +135,7 @@ void loop() {
 *Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
 </details>
 
-<details>
+
 
 
 </details>
