@@ -77,7 +77,7 @@ Please try yourself first, and look at the hints if needed.
 ### 1) Christmas tree no code | ไม่มีโค้ด
 
 <details>
-<summary>💡 Hint 0 — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
+<summary>💡 Hint — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
 
 <br>
 
@@ -90,7 +90,7 @@ Please try yourself first, and look at the hints if needed.
 ### 2) Christmas tree with code: Blinking the top light | ต้นคริสต์มาสพร้อมโค้ด: ทำให้ไฟด้านบนกะพริบ
 
 <details>
-<summary>💡 Hint — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
+<summary>💡 Hint 0 — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
 <br>
 <img width="662" height="567" alt="image" src="https://github.com/user-attachments/assets/227cdb49-edae-48eb-bf94-c2b49ecb3dec" />
 
