@@ -74,6 +74,14 @@ void loop() {
 
 Please try it yourself first, and use the hints if needed. | โปรดลองทำด้วยตัวเองก่อน แล้วค่อยใช้คำใบ้หากจำเป็น
 
+### 0) Useful Commands | คำสั่งที่มีประโยชน์
+**How to use this | วิธีใช้งาน**
+
+1. Find the code block for your task below. | หาโค้ดของงานคุณด้านล่าง
+2. Click **Copy Code**. | คลิก **Copy Code**
+3. Switch to **Cirkit Designer** and paste it (**Ctrl+V** or **Cmd+V**). | สลับไปที่ **Cirkit Designer** แล้ววางโค้ด (**Ctrl+V** หรือ **Cmd+V**)
+ 
+
 ### 1) Christmas tree no code | ไม่มีโค้ด
 
 <details>
