@@ -72,10 +72,12 @@ void loop() {
 
 ## Lesson 3 — Weekly Challenge: Christmas Tree | บทที่ 3 — ความท้าทายประจำสัปดาห์: ต้นคริสต์มาส
 
+Please try yourself first, and look at the hints if needed.
+
 ### 1) Christmas tree no code | ไม่มีโค้ด
 
 <details>
-<summary>💡 Hint — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
+<summary>💡 Hint 0 — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
 
 <br>
 
@@ -85,22 +87,43 @@ void loop() {
 
 </details>
 
-### 2) Christmas tree with code: Blinking the top light | 
+### 2) Christmas tree with code: Blinking the top light | ต้นคริสต์มาสพร้อมโค้ด: ทำให้ไฟด้านบนกะพริบ
 
 <details>
 <summary>💡 Hint — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
-
 <br>
-
 <img width="662" height="567" alt="image" src="https://github.com/user-attachments/assets/227cdb49-edae-48eb-bf94-c2b49ecb3dec" />
 
 *Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
-
 </details>
 
+<details>
+<summary>💡 Hint 1 — Code | คลิกเพื่อดูคำใบ้ — ดูโค้ดจากบทเรียนที่ 2</summary>
+<br>
+Look at code from Lesson 2: One Blinking LED. | ดูโค้ดจากบทที่ 2: LED กะพริบหนึ่งดวง
+</details>
 
+<details>
+<summary>💡 Hint 2 — Code | คลิกเพื่อดูคำใบ้ — โค้ดเฉลย</summary>
+<br>
 
+```cpp
+// Define variables | กำหนดตัวแปร
+#define LED_PIN_1 0
+void setup() {
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
+  pinMode(LED_PIN_1,OUTPUT); 
+}
+void loop() {
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
+    digitalWrite(LED_PIN_1,HIGH);
+    delay(1000);
+    digitalWrite(LED_PIN_1,LOW);
+    delay(1000);
+}
+```
 
+</details>
 
 
 
