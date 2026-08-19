@@ -6,7 +6,7 @@
 
 
 
-# IOT Lessons | บทเรียน IOT
+# IoT Lessons | บทเรียน IoT
 
 ---
 
