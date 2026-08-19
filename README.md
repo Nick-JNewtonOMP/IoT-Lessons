@@ -72,7 +72,7 @@ void loop() {
 
 ## Lesson 3 — Weekly Challenge: Christmas Tree | บทที่ 3 — ความท้าทายประจำสัปดาห์: ต้นคริสต์มาส
 
-Please try yourself first, and look at the hints if needed.
+Please try it yourself first, and use the hints if needed. | โปรดลองทำด้วยตัวเองก่อน แล้วค่อยใช้คำใบ้หากจำเป็น
 
 ### 1) Christmas tree no code | ไม่มีโค้ด
 
