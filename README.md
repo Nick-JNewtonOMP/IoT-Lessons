@@ -125,7 +125,7 @@ void loop() {
 
 </details>
 
----
+
 
 ### 3) Christmas tree with code: Adding decorations | ต้นคริสต์มาสพร้อมโค้ด: เพิ่มการตกแต่ง
 
@@ -138,9 +138,40 @@ void loop() {
 </details>
 
 
+<details>
+<summary>💡 Hint 1 — Code | คลิกเพื่อดูคำใบ้ — โค้ดเฉลย</summary>
+<br>
 
+```cpp
+// Define variables | กำหนดตัวแปร
+#define LED_top 0
+#define LED_red_1 35
+#define LED_red_2 36
+
+void setup() {
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
+  pinMode(LED_top,OUTPUT); 
+  pinMode(LED_red_1,OUTPUT); 
+  pinMode(LED_red_2,OUTPUT); 
+
+}
+void loop() {
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
+    digitalWrite(LED_top,HIGH);
+    digitalWrite(LED_red_1,HIGH);
+    digitalWrite(LED_red_2,HIGH);
+    delay(1000);
+    
+    digitalWrite(LED_top,LOW);
+    digitalWrite(LED_red_1,LOW);
+    digitalWrite(LED_red_2,LOW);
+    delay(1000);
+}
+```
 
 </details>
+
+
 
 
 
