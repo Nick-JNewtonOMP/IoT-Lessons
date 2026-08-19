@@ -122,10 +122,12 @@ void loop() {
     delay(1000);
 }
 ```
-<details>
 
-  
-### 3) Christmas tree with code: Adding decorations | 
+</details>
+
+---
+
+### 3) Christmas tree with code: Adding decorations | ต้นคริสต์มาสพร้อมโค้ด: เพิ่มการตกแต่ง
 
 <details>
 <summary>💡 Hint 0 — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
