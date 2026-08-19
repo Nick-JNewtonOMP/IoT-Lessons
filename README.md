@@ -172,6 +172,102 @@ void loop() {
 </details>
 
 
+### 4) Christmas tree with code: Make it yours! | 
+
+<details>
+<summary>💡 Suggestion 0 — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
+<br>
+Use the wiring diagrams you made earlier and add what you want. For example a blue LED.
+</details>
+
+
+
+
+<details>
+<summary>💡 Suggestion 2 — Code | คลิกเพื่อดูคำใบ้ — โค้ดเฉลย</summary>
+<br>
+Controll all LEDs of the tree. Be mindfull of the pins you use on the ESP32.
+</details>
+
+
+### 4) Christmas tree with code: Make it yours! | ต้นคริสต์มาสพร้อมโค้ด: ทำให้เป็นของคุณเอง!
+
+Try things and see what happens! | ลองทำแล้วดูว่าเกิดอะไรขึ้น!
+
+<details>
+<summary>🎄 Suggestion 0 — Wiring | คลิกเพื่อดูไอเดีย — การต่อสาย</summary>
+<br>
+Start from the wiring you already made and add something new. How about a blue LED? Or two? The circuit is yours to expand! | เริ่มจากการต่อสายที่คุณทำไว้แล้ว แล้วเพิ่มสิ่งใหม่เข้าไป เช่น LED สีน้ำเงิน หรือจะเพิ่มสองดวงก็ได้!
+</details>
+
+<details>
+<summary>🎄 Suggestion 1 — Play with the order | คลิกเพื่อดูไอเดีย — ลองเปลี่ยนลำดับ</summary>
+<br>
+Until now the LEDs always turned on and off together. Try switching the order and mixing HIGH and LOW. What happens if one turns on while another turns off at the same time? | จนถึงตอนนี้ LED จะติดและดับพร้อมกันเสมอ ลองสลับลำดับและผสม HIGH กับ LOW ดู จะเกิดอะไรขึ้นถ้าดวงหนึ่งติดในขณะที่อีกดวงดับ?
+
+Try something like this: | ลองแบบนี้ดู:
+
+```cpp
+void loop() {
+  // Mix HIGH and LOW with delays in between | ผสม HIGH และ LOW โดยมี delay คั่นกลาง
+    digitalWrite(LED_top, HIGH);
+    delay(500);
+    digitalWrite(LED_red_1, HIGH);
+    digitalWrite(LED_red_2, LOW);
+    delay(500);
+    digitalWrite(LED_red_1, LOW);
+    digitalWrite(LED_red_2, HIGH);
+    delay(300);
+    digitalWrite(LED_top, LOW);
+    digitalWrite(LED_red_2, LOW);
+    delay(1000);
+}
+```
+
+Or try this: | หรือลองแบบนี้:
+
+```cpp
+void loop() {
+  // One on, one off, one waiting | ดวงหนึ่งติด ดวงหนึ่งดับ ดวงหนึ่งรออยู่
+    digitalWrite(LED_red_1, HIGH);
+    delay(200);
+    digitalWrite(LED_red_2, LOW);
+    delay(200);
+    digitalWrite(LED_red_1, LOW);
+    delay(200);
+    digitalWrite(LED_red_2, HIGH);
+    delay(500);
+}
+```
+
+Or try this: | หรือลองแบบนี้:
+
+```cpp
+  
+void loop() {
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
+    digitalWrite(LED_top,HIGH);
+    delay(1000);
+    digitalWrite(LED_red_1,HIGH);
+    delay(2000);
+    digitalWrite(LED_red_2,HIGH);
+    delay(3000);
+    
+    digitalWrite(LED_top,LOW);
+    delay(1000);
+    digitalWrite(LED_red_1,LOW);
+    delay(2000);
+    digitalWrite(LED_red_2,LOW);
+    delay(500);
+}
+```
+</details>
+
+<details>
+<summary>🎄 Suggestion 2 — Take full control | คลิกเพื่อดูไอเดีย — ควบคุม LED ทั้งหมด</summary>
+<br>
+Can you control every single LED on the tree? Give each one its own timing and mix HIGH and LOW however you like. Just keep an eye on which pins you are using on the ESP32! | ลองควบคุม LED ทุกดวงบนต้นไม้ได้เลย ให้แต่ละดวงมีจังหวะเป็นของตัวเอง แค่ระวังขาพินที่ใช้บน ESP32 ด้วย!
+</details>
 
 
 
