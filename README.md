@@ -123,6 +123,19 @@ void loop() {
 }
 ```
 
+### 3) Christmas tree with code: Adding decorations | 
+
+<details>
+<summary>💡 Hint 0 — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
+<br>
+<img width="758" height="597" alt="image" src="https://github.com/user-attachments/assets/514d754a-816f-4e58-9170-f3c62187fdf7" />
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+</details>
+
+<details>
+
+
 </details>
 
 
