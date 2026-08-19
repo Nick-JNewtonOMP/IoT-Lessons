@@ -70,7 +70,26 @@ void loop() {
 
 ---
 
-## Lesson 3 — | บทที่ 3 —
+## Lesson 3 — Weekly Challenge: Christmas Tree | บทที่ 3 — ความท้าทายประจำสัปดาห์: ต้นคริสต์มาส
+
+### 1) Christmas tree no code | ไม่มีโค้ด
+
+<details>
+<summary>💡 Hint — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
+
+<br>
+
+<img width="927" height="590" alt="Christmas tree wiring diagram" src="https://github.com/user-attachments/assets/60e78ea0-661e-4d2e-94e6-64370a4918e2" />
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+
+</details>
+
+### 2) Christmas tree with code | 
+
+
+
+
 
 
 
