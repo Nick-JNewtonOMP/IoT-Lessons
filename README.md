@@ -9,7 +9,10 @@
 # IoT Lessons | บทเรียน IoT
 
 ---
-
+<details>
+<summary><strong>Week 1 — Introduction to IoT: LED Tree | สัปดาห์ที่ 1 — แนะนำ IoT: ต้นไม้ LED</strong></summary>
+<br>
+  
 ## Lesson 1 — Introduction to IoT | บทที่ 1 — แนะนำ IoT
 In this lesson there was no code needed. | ในบทเรียนนี้ไม่จำเป็นต้องใช้โค้ด
 But please feel free to check out | แต่สามารถดูข้อมูลเพิ่มเติมได้ที่
@@ -257,9 +260,41 @@ void loop() {
 <details>
 <summary>🎄 Suggestion 2 — Take full control | คลิกเพื่อดูไอเดีย — ควบคุม LED ทั้งหมด</summary>
 <br>
-Can you control every single LED on the tree? Give each one its own timing and mix HIGH and LOW however you like. Just keep an eye on which pins you are using on the ESP32! | ลองควบคุม LED ทุกดวงบนต้นไม้ได้เลย ให้แต่ละดวงมีจังหวะเป็นของตัวเอง แค่ระวังขาพินที่ใช้บน ESP32 ด้วย!
+Can you control every single LED on the tree? Give each one its own timing and mix HIGH and LOW however you like. Just keep an eye on which pins you are using on the ESP32! | ลองควบคุม LED ทุกดวงบนต้นไม้ได้เลย ให้แต่ละดวงมีจังหวะเป็นของตัวเอง แค่ระวังขาพินที่ใช้บน ESP32 ด้วย! 
+</details>
+
 </details>
 
 
 
+<details>
+<summary><strong>Week 2 — Sensors, Screens and Data | สัปดาห์ที่ 2 — เซ็นเซอร์ หน้าจอ และข้อมูล</strong></summary>
+<br>
+
+## Lesson 1 —  | บทที่ 3 — 
+
+Please try it yourself first, and use the hints if needed. | โปรดลองทำด้วยตัวเองก่อน แล้วค่อยใช้คำใบ้หากจำเป็น
+
+
+ ---
+
+### 1) Christmas tree no code | ไม่มีโค้ด
+
+<details>
+<summary>💡 Hint — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
+
+<br>
+
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+
+</details>
+
+
+
+
+---
+
+
+</details>
 
