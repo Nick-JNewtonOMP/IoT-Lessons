@@ -329,6 +329,30 @@ What happens when you remove one LED from a series circuit? In a real circuit yo
 </details>
 
 
+### 3) Parallel circuit | วงจรขนาน
+
+<details>
+<summary>🔌 Wiring diagram | คลิกเพื่อดูแผนผังการต่อสาย</summary>
+<br>
+
+Build the circuit shown below. | สร้างวงจรตามภาพด้านล่าง
+
+**Components | อุปกรณ์:** Resistors, LEDs, 5V DC Power Supply, Switch | ตัวต้านทาน, LED, แหล่งจ่ายไฟ 5V, สวิตช์
+
+The top diagram shows a parallel circuit where components are connected across two separate loops. What happens to the brightness of the LEDs when you change the resistor values? Try keeping one resistor value constant while increasing or decreasing the other one. Do both LEDs behave the same way? | แผนผังด้านบนแสดงวงจรขนานที่อุปกรณ์ต่อกันในสองวงแยกกัน เกิดอะไรขึ้นกับความสว่างของ LED เมื่อคุณเปลี่ยนค่าตัวต้านทาน? ลองเก็บค่าตัวต้านทานตัวหนึ่งไว้คงที่แล้วเพิ่มหรือลดอีกตัวหนึ่ง LED ทั้งสองดวงมีพฤติกรรมเหมือนกันไหม?
+
+🤔 Now try this | ลองสิ่งนี้:
+
+What happens when you remove one LED from a parallel circuit? In a real circuit you would cut the wire. Here you can simulate that using the switch at the bottom. An **open switch** means the wire is cut. Does the other LED stay on? | จะเกิดอะไรขึ้นเมื่อถอด LED ออกหนึ่งดวงจากวงจรขนาน? ในวงจรจริงคุณจะต้องตัดสาย แต่ที่นี่คุณสามารถจำลองได้โดยใช้สวิตช์ **สวิตช์เปิด** หมายความว่าสายถูกตัด LED อีกดวงยังติดอยู่ไหม?
+
+<br>
+<img width="487" height="595" alt="image" src="https://github.com/user-attachments/assets/6352448f-fe66-40da-9102-e3adc587ac0f" />
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+
+</details>
+
+
 
 
 ---
