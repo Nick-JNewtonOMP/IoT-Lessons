@@ -268,22 +268,60 @@ Can you control every single LED on the tree? Give each one its own timing and m
 
 
 <details>
-<summary><strong>Week 2 — Sensors, Screens and Data | สัปดาห์ที่ 2 — เซ็นเซอร์ หน้าจอ และข้อมูล</strong></summary>
+<summary><strong>Week 2 — Resistors, Sensors and Input | สัปดาห์ที่ 2 — เซ็นเซอร์ หน้าจอ และข้อมูล</strong></summary>
 <br>
 
-## Lesson 1 —  | บทที่ 3 — 
+## Lesson 1 — Resistors and Circuits | บทที่ 1 — ตัวต้านทานและวงจร
 
 Please try it yourself first, and use the hints if needed. | โปรดลองทำด้วยตัวเองก่อน แล้วค่อยใช้คำใบ้หากจำเป็น
 
 
  ---
 
-### 1) Christmas tree no code | ไม่มีโค้ด
+### 1)  What happens when you change the resistor value? | เกิดอะไรขึ้นเมื่อคุณเปลี่ยนค่าตัวต้านทาน?
+ 
 
 <details>
-<summary>💡 Hint — Wiring diagram | คลิกเพื่อดูคำใบ้ — แผนผังการต่อสาย</summary>
+<summary>🔌 Wiring diagram | คลิกเพื่อดูแผนผังการต่อสาย </summary>
+
+Wire your circuit as shown in the figure below. | ต่อวงจรตามภาพด้านล่าง
+
+**Components | อุปกรณ์:** Resistor, LED, 5V DC Power Supply, 7-Segment Panel Voltmeter | ตัวต้านทาน, LED, แหล่งจ่ายไฟ 5V, โวลต์มิเตอร์
+
+The Voltmeter lets you measure the voltage across your components in your circuit as you change the resistor value. Also pay attention to the brightness of the LED. It tells you a lot! | โวลต์มิเตอร์ช่วยให้คุณวัดแรงดันไฟฟ้าที่คร่อมอุปกรณ์แต่ละชิ้นขณะที่เปลี่ยนค่าตัวต้านทาน และสังเกตความสว่างของ LED ด้วย มันบอกอะไรคุณได้มาก!
+
+🤔 Think about it | ลองคิดดู:
+- What happens when you **increase** the resistance? | เกิดอะไรขึ้นเมื่อ**เพิ่ม**ค่าความต้านทาน?
+- What happens when you **decrease** the resistance? | เกิดอะไรขึ้นเมื่อ**ลด**ค่าความต้านทาน?
 
 <br>
+
+<img width="812" height="672" alt="image" src="https://github.com/user-attachments/assets/67e00d46-76dd-463b-a5f1-5bdd8efc8fb3" />
+
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+
+</details>
+
+
+
+### 2)  Series circuit | วงจรอนุกรม
+
+<details>
+<summary>🔌 Wiring diagram | คลิกเพื่อดูแผนผังการต่อสาย </summary>
+
+Build the circuit shown below. | สร้างวงจรตามภาพด้านล่าง
+
+**Components | อุปกรณ์:** Resistors, LEDs, 5V DC Power Supply, Switch | ตัวต้านทาน, LED, แหล่งจ่ายไฟ 5V, สวิตช์
+
+The top diagram shows a series circuit where all components are connected in one single loop. What happens to the brightness of the LEDs when you change the resistor value? | แผนผังด้านบนแสดงวงจรอนุกรมที่อุปกรณ์ทั้งหมดต่อกันเป็นวงเดียว เกิดอะไรขึ้นกับความสว่างของ LED เมื่อคุณเปลี่ยนค่าตัวต้านทาน?
+
+🤔 Now try this | ลองสิ่งนี้:
+
+What happens when you remove one LED from a series circuit? In a real circuit you would cut the wire. Here you can simulate that using the switch at the bottom. An **open switch** means the wire is cut. | จะเกิดอะไรขึ้นเมื่อถอด LED ออกหนึ่งดวงจากวงจรอนุกรม? ในวงจรจริงคุณจะต้องตัดสาย แต่ที่นี่คุณสามารถจำลองได้โดยใช้สวิตช์ **สวิตช์เปิด** หมายความว่าสายถูกตัด
+
+<br>
+<img width="383" height="583" alt="image" src="https://github.com/user-attachments/assets/c7750214-ef10-4de1-8ff1-dd253cc9340b" />
 
 
 *Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
