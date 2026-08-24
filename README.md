@@ -352,7 +352,121 @@ What happens when you remove one LED from a parallel circuit? In a real circuit 
 
 </details>
 
+### 4) LDR | เซ็นเซอร์แสง LDR
 
+<details>
+<summary>🔌 Wiring diagram | คลิกเพื่อดูแผนผังการต่อสาย</summary>
+<br>
+
+Build the circuit shown below. | สร้างวงจรตามภาพด้านล่าง
+
+**Components | อุปกรณ์:** LDR, ESP32 | LDR (ตัวต้านทานแสง), ESP32
+
+Connect the VCC pin of the LDR to the positive rail. Connect the GND pin of the LDR to the negative rail. Connect the A0 pin to pin 2 of the ESP32 board. | ต่อขา VCC ของ LDR เข้ากับราง positive ต่อขา GND ของ LDR เข้ากับราง negative และต่อขา A0 เข้ากับขา 2 ของบอร์ด ESP32 
+
+<br>
+
+<img width="656" height="471" alt="image" src="https://github.com/user-attachments/assets/d270a7d0-5009-4a14-a3cd-04871e883500" />
+
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+
+</details>
+
+
+
+<details>
+<summary>💡 Hint 1 — Define your pin | คลิกเพื่อดูคำใบ้ — กำหนดขาพิน</summary>
+<br>
+
+Do you remember to define and name your pin using **define** ? | คุณจำได้ไหมว่าต้องกำหนดและตั้งชื่อขาพินโดยใช้ **define** อย่างไร?
+```cpp
+// Define variables | กำหนดตัวแปร
+  #define LDR_Pin 2 
+```
+
+</details>
+
+
+<details>
+<summary>💡 Hint 2 — Setup | คลิกเพื่อดูคำใบ้ — การตั้งค่าเริ่มต้น</summary>
+<br>
+
+Start with the setup. We need to define the pin function and start the Serial Monitor. Do you remember the **pinMode** function? This time the pin is an INPUT not an OUTPUT. | เริ่มด้วยการตั้งค่า เราต้องกำหนดฟังก์ชันของขาพินและเริ่มต้น Serial Monitor คุณจำฟังก์ชัน **pinMode** ได้ไหม? คราวนี้ขาพินเป็น INPUT ไม่ใช่ OUTPUT
+
+```cpp
+// Define variables | กำหนดตัวแปร
+#define LDR_Pin 2
+
+void setup() {
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
+    Serial.begin(9600);
+    pinMode(LDR_Pin,INPUT);
+}
+
+```
+
+</details>
+
+<details>
+<summary>💡 Hint 3 — Loop | คลิกเพื่อดูคำใบ้ — การวนซ้ำ</summary>
+<br>
+  
+Next is the loop. We need to read the incoming data from the LDR and show it in the Serial Monitor. | ตอนนี้เขียนส่วน loop เราต้องอ่านข้อมูลที่เข้ามาจาก LDR และแสดงผลใน Serial Monitor
+
+Here is what each line does | แต่ละบรรทัดทำหน้าที่ดังนี้:
+
+- **int** tells the code what type of data to expect. In this case integer numbers. | **int** บอกโค้ดว่าข้อมูลที่ได้รับเป็นชนิดใด ในที่นี้คือจำนวนเต็ม
+- **LDR_value** is the name we give to that data. | **LDR_value** คือชื่อที่เราตั้งให้กับข้อมูลนั้น
+- **analogRead** reads the value coming from the pin. | **analogRead** อ่านค่าที่มาจากขาพิน
+- **Serial.println** shows the value in the Serial Monitor. We use **println** and not **print** so each new value appears on a new line. | **Serial.println** แสดงค่าใน Serial Monitor เราใช้ **println** ไม่ใช่ **print** เพื่อให้ค่าใหม่แต่ละค่าแสดงบนบรรทัดใหม่
+- **delay** gives the microcontroller time to process. Without it the Serial Monitor gets flooded with data and may freeze. | **delay** ให้เวลาไมโครคอนโทรลเลอร์ประมวลผล หากไม่มี delay Serial Monitor จะรับข้อมูลมากเกินไปและอาจค้าง
+
+```cpp
+// Define variables | กำหนดตัวแปร
+#define LDR_Pin 2
+
+void setup() {
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
+  Serial.begin(9600);
+  pinMode(LDR_Pin, INPUT);
+}
+
+void loop() {
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
+  int LDR_value = analogRead(LDR_Pin);
+  Serial.println(LDR_value);
+  delay(500);
+}
+```
+
+</details>
+
+
+<details>
+<summary>💡 Hint 4 — Complete Code | คลิกเพื่อดูโค้ดทั้งหมด</summary>
+<br>
+  
+
+```cpp
+// Define variables | กำหนดตัวแปร
+#define LDR_Pin 2
+
+void setup() {
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
+  Serial.begin(9600);
+  pinMode(LDR_Pin, INPUT);
+}
+
+void loop() {
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
+  int LDR_value = analogRead(LDR_Pin);
+  Serial.println(LDR_value);
+  delay(500);
+}
+```
+
+</details>
 
 
 ---
