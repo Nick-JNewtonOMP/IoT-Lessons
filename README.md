@@ -422,6 +422,8 @@ Here is what each line does | แต่ละบรรทัดทำหน้�
 - **Serial.println** shows the value in the Serial Monitor. We use **println** and not **print** so each new value appears on a new line. | **Serial.println** แสดงค่าใน Serial Monitor เราใช้ **println** ไม่ใช่ **print** เพื่อให้ค่าใหม่แต่ละค่าแสดงบนบรรทัดใหม่
 - **delay** gives the microcontroller time to process. Without it the Serial Monitor gets flooded with data and may freeze. | **delay** ให้เวลาไมโครคอนโทรลเลอร์ประมวลผล หากไม่มี delay Serial Monitor จะรับข้อมูลมากเกินไปและอาจค้าง
 
+- 🤔 Try it yourself: swap Serial.println() for Serial.print() and see what changes in the Serial Monitor. | ลองด้วยตัวเอง: เปลี่ยน Serial.println() เป็น Serial.print() แล้วดูว่าเกิดอะไรขึ้นใน Serial Monitor
+
 ```cpp
 // Define variables | กำหนดตัวแปร
 #define LDR_Pin 2
