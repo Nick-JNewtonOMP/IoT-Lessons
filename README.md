@@ -736,8 +736,38 @@ void loop() {
 
 
 
----
+### 4) Try a different sensor: Flame sensor! | ลองใช้เซ็นเซอร์ต่างชนิด: เซ็นเซอร์เปลวไฟ!
+
+Your challenge: you have a new sensor. Can you work out how to wire it and write the code yourself? Look at the sensor carefully: does it remind you of anything you have used before? | ความท้าทายของคุณ: คุณมีเซ็นเซอร์ใหม่ คุณสามารถคิดวิธีต่อสายและเขียนโค้ดเองได้ไหม? สังเกตเซ็นเซอร์ดีๆ มันทำให้คุณนึกถึงอะไรที่เคยใช้มาก่อนไหม?
+
+
+<details>
+<summary>💡 Hint 1 — Stuck on the wiring? | คลิกเพื่อดูคำใบ้ — ติดปัญหาเรื่องการต่อสาย?</summary>
+<br>
+  
+Does this module look familiar? G = GND and + = VCC. | โมดูลนี้ดูคุ้นเคยไหม? G = GND และ + = VCC
+
+<img width="720" height="391" alt="image" src="https://github.com/user-attachments/assets/b55e6bbf-3738-4666-b2a1-289d750e6870" />
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+
+</details>
+
+
+<details>
+<summary>💡 Hint 2 — Stuck on the code? | คลิกเพื่อดูคำใบ้ — ติดปัญหาเรื่องโค้ด?</summary>
+
+What type of signal do I want to receive? Simple ON/OFF or specific values? Does this remind you of something? Light or no light? | ฉันต้องการรับสัญญาณแบบใด? แบบเปิด/ปิด หรือค่าที่เฉพาะเจาะจง? สิ่งนี้ทำให้คุณนึกถึงอะไรไหม? มีแสงหรือไม่มีแสง?
 
 
 </details>
 
+### 5) Finished everything? Keep exploring! | เสร็จทุกอย่างแล้ว? ลองสำรวจต่อไป!
+
+You have now worked with multiple sensors. Pick any sensor from the box and try to get it working on your own. Use what you have learned and see how far you can get! | ตอนนี้คุณได้ทดลองใช้เซ็นเซอร์หลายตัวแล้ว เลือกเซ็นเซอร์ใดก็ได้จากกล่องแล้วลองทำให้มันทำงานด้วยตัวเอง ใช้สิ่งที่คุณได้เรียนรู้และดูว่าคุณไปได้ไกลแค่ไหน!
+
+
+---
+
+
+</details>
