@@ -764,7 +764,7 @@ What type of signal do I want to receive? Simple ON/OFF or specific values? Does
 
 ### 5) Finished everything? Keep exploring! | เสร็จทุกอย่างแล้ว? ลองสำรวจต่อไป!
 
-You have now worked with multiple sensors. Pick any sensor from the box and try to get it working on your own. Use what you have learned and see how far you can get! | ตอนนี้คุณได้ทดลองใช้เซ็นเซอร์หลายตัวแล้ว เลือกเซ็นเซอร์ใดก็ได้จากกล่องแล้วลองทำให้มันทำงานด้วยตัวเอง ใช้สิ่งที่คุณได้เรียนรู้และดูว่าคุณไปได้ไกลแค่ไหน!
+You have now worked with some sensors. Pick any sensor from the box and try to get it working on your own. Use what you have learned and see how far you can get! | ตอนนี้คุณได้ทดลองใช้เซ็นเซอร์บางตัวแล้ว เลือกเซ็นเซอร์ใดก็ได้จากกล่องแล้วลองทำให้มันทำงานด้วยตัวเอง ใช้สิ่งที่คุณได้เรียนรู้และดูว่าคุณไปได้ไกลแค่ไหน!
 
 
 ---
