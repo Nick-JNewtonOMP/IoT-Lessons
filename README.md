@@ -470,6 +470,271 @@ void loop() {
 
 </details>
 
+---
+
+## Lesson 2 — Pins, Conditions and Sensors | บทที่ 2 — พิน เงื่อนไข และเซ็นเซอร์
+
+Please try it yourself first, and use the hints if needed. | โปรดลองทำด้วยตัวเองก่อน แล้วค่อยใช้คำใบ้หากจำเป็น
+
+
+ ---
+### 1)  LED Blinks when the room is dark | LED กะพริบเมื่อห้องมืด
+
+Your challenge: when a room goes dark let an LED blink and warn the user by printing a message to the Serial Monitor. Use the LDR diagram from yesterday (Lesson 4). Which pin should you use? Do you need an accurate measurement or just an on or off signal? | ความท้าทายของคุณ: เมื่อห้องมืดลง ให้ LED กะพริบและแจ้งเตือนผู้ใช้โดยพิมพ์ข้อความไปยัง Serial Monitor ใช้แผนผังการต่อสาย LDR จากเมื่อวาน (บทที่ 4) คุณควรใช้ขาพินใด? คุณต้องการการวัดที่แม่นยำหรือแค่สัญญาณเปิดหรือปิด?
+
+<details>
+<summary>🔌 Wiring diagram | คลิกเพื่อดูแผนผังการต่อสาย </summary>
+
+Wire your circuit as shown in the figure below. | ต่อวงจรตามภาพด้านล่าง
+
+**Components | อุปกรณ์:** LDR, ESP32, LED, Resistor | LDR (ตัวต้านทานแสง), ESP32, LED, Resistor
+
+
+<br>
+
+<img width="497" height="422" alt="image" src="https://github.com/user-attachments/assets/c1e09d0a-64af-4c60-9fbd-1251a001747c" />
+
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+
+</details>
+
+
+<details>
+<summary>💡 Hint 1 — Digital or Analogue |คลิกเพื่อดูคำใบ้ — ดิจิทัลหรืออนาล็อก</summary>
+<br>
+
+Since we only want to know when the room is dark or not, the digital pin is sufficient. | เนื่องจากเราต้องการรู้เพียงว่าห้องมืดหรือไม่ ขาดิจิทัลก็เพียงพอแล้ว
+```cpp
+// Define variables | กำหนดตัวแปร
+#define LED_Pin 0
+#define LDR_Digital 8
+
+```
+</details>
+
+
+<details>
+<summary>💡 Hint 2 — Setup | คลิกเพื่อดูคำใบ้ — การตั้งค่าเริ่มต้น</summary>
+<br>
+
+Which pin is **INPUT** and which one is **OUTPUT**?
+
+```cpp
+void setup() {
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
+  Serial.begin(9600);
+  pinMode(LDR_Digital, INPUT);
+  pinMode(LED_Pin,OUTPUT);
+}
+
+```
+</details>
+
+
+<details>
+<summary>💡 Hint 3 — Loop | vคลิกเพื่อดูคำใบ้ — การวนซ้ำ</summary>
+<br>
+
+Which statement do you need? How many conditions are there?
+
+```cpp
+void loop() {
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
+    int LDR_Threshold = digitalRead(LDR_Digital);
+    if (LDR_Threshold == HIGH){
+        Serial.println("ROOM IS DARK!");
+        Serial.println("Switching on LED");
+        digitalWrite(LED_Pin,HIGH);
+        delay(500);
+        digitalWrite(LED_Pin,LOW);
+        delay(500);
+    }
+
+    else{
+        digitalWrite(LED_Pin,LOW);
+        delay(100);
+    }
+}
+
+
+```
+</details>
+
+
+### 2)  Add the analogue value | เพิ่มค่าอนาล็อก
+
+
+Use the same circuit as above but now also show the LDR values on the Serial Monitor when the room is dark. | ใช้วงจรเดิมจากข้างบน แต่คราวนี้ให้แสดงค่าแสงบน Serial Monitor ด้วยเมื่อห้องมืด
+
+🤔 Think about it: you already have the digital pin telling you when it is dark. Now you just need to add the analogue pin to measure how dark it actually is. | ลองคิดดู: คุณมีขาดิจิทัลที่บอกว่าห้องมืดแล้ว ตอนนี้แค่เพิ่มขาอนาล็อกเพื่อวัดว่ามืดแค่ไหน
+
+
+<details>
+<summary>💡 Hint 1 — Add the analogue pin | คลิกเพื่อดูคำใบ้ — เพิ่มขาอนาล็อก</summary>
+<br>
+
+Add a new pin definition for the analogue LDR pin. | เพิ่มการกำหนดขาพินใหม่สำหรับขาอนาล็อกของ LDR
+
+```cpp
+// Define variables | กำหนดตัวแปร
+#define LED_Pin 0
+#define LDR_Digital 8
+#define LDR_Analogue 2
+
+```
+
+</details>
+
+<details>
+<summary>💡 Hint 2 — Setup |  คลิกเพื่อดูคำใบ้ — การตั้งค่าเริ่มต้น</summary>
+<br>
+
+Add **pinMode(LDR_Analogue,INPUT);** to the Setup function. Note the INPUT and not OUTPUT. | เพิ่ม **pinMode(LDR_Analogue,INPUT);** ในฟังก์ชัน setup. โปรดสังเกตว่าเป็น INPUT ไม่ใช่ OUTPUT
+
+</details>
+
+
+<details>
+<summary>💡 Hint 3 — loop | คลิกเพื่อดูคำใบ้ — การวนซ้ำ</summary>
+<br>
+
+Remember | จำไว้ว่า:
+- Read the analogue value using **analogRead(LDR_Analogue)** | อ่านค่าอนาล็อกโดยใช้ **analogRead(LDR_Analogue)**
+- Show it on the Serial Monitor using **Serial.println()** | แสดงผลบน Serial Monitor โดยใช้ **Serial.println()**
+
+
+```cpp
+int LDR_Value = analogRead(LDR_Analogue);
+```
+
+</details>
+
+<details>
+<summary>💡 Hint 4 — Full solution | คลิกเพื่อดูโค้ดทั้งหมด </summary>
+<br>
+
+
+```cpp
+// Define variables | กำหนดตัวแปร
+#define LED_Pin 0
+#define LDR_Digital 8
+#define LDR_Analogue 2
+
+void setup() {
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
+  Serial.begin(9600);
+  pinMode(LDR_Analogue, INPUT);
+  pinMode(LDR_Digital, INPUT);
+  pinMode(LED_Pin,OUTPUT);
+}
+
+void loop() {
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
+    int LDR_Value = analogRead(LDR_Analogue);
+    int LDR_Threshold = digitalRead(LDR_Digital);
+
+    if (LDR_Threshold == HIGH){
+        Serial.println("ROOM IS DARK!");
+        Serial.println("Switching on LED");
+
+        Serial.println(LDR_Value);
+        digitalWrite(LED_Pin,HIGH);
+        delay(500);
+        digitalWrite(LED_Pin,LOW);
+        delay(500);
+
+    }
+
+    else{
+        digitalWrite(LED_Pin,LOW);
+        delay(100);
+    }
+}
+
+
+```
+
+</details>
+
+
+### 3)  What is wrong? | มีอะไรผิดพลาด?
+
+Your challenge: why does the following setup not work? What is the mistake in the code and what is the mistake in the wiring? | ความท้าทายของคุณ: ทำไมการตั้งค่าต่อไปนี้ถึงไม่ทำงาน? มีข้อผิดพลาดอะไรในโค้ด และมีข้อผิดพลาดอะไรในการต่อสาย?
+
+
+<details>
+<summary>🔌 Wiring diagram | คลิกเพื่อดูแผนผังการต่อสาย </summary>
+
+Wire your circuit as shown in the figure below. | ต่อวงจรตามภาพด้านล่าง
+
+**Components | อุปกรณ์:** LDR, ESP32, LED, Resistor | LDR (ตัวต้านทานแสง), ESP32, LED, Resistor
+
+
+<br>
+
+<img width="655" height="446" alt="image" src="https://github.com/user-attachments/assets/740ab63e-49e2-4077-bb71-652777784668" />
+
+
+*Image made with [Cirkit Designer](https://app.cirkitdesigner.com/) | ภาพสร้างด้วย Cirkit Designer*
+
+</details>
+
+
+<details>
+<summary>🔌 Code | คลิกเพื่อดูโค้ด </summary>
+  
+Can you spot the mistakes and fix them? | คุณสามารถหาข้อผิดพลาดและแก้ไขได้ไหม?
+
+
+<br>
+
+```cpp
+// Define variables | กำหนดตัวแปร
+#define LED_Pin 0
+#define LDR_Digital 8
+#define LDR_Analogue 2
+
+void setup() {
+  // Put your setup code here, to run once: | ใส่โค้ดตั้งค่าที่นี่ รันครั้งเดียว
+  Serial.begin(9600);
+  pinMode(LDR_Analogue, INPUT);
+
+  pinMode(LDR_Digital, OUTPUT);
+  pinMode(LED_Pin,OUTPUT);
+}
+
+void loop() {
+  // Put your main code here, to run repeatedly: | ใส่โค้ดหลักที่นี่ รันซ้ำๆ
+    int LDR_Value = analogRead(LDR_Pin);
+    int LDR_Threshold = digitalRead(LDR_Digital);
+
+    if (LDR_Threshold == HIGH){
+        Serial.println("ROOM IS DARK!");
+        Serial.print("Switching on LED");
+
+        Serial.println(LDR_Value);
+        digitalWrite(LED_Pin,HIGH)
+        delay(500);
+        digitalWrite(LED_Pin,LOW);
+        delay(500);
+
+    }
+
+    else{
+        digitalWrite(LED_Pin,HIGH);
+        delay(100);
+    }
+
+
+}
+
+
+```
+
+</details>
+
+
 
 ---
 
