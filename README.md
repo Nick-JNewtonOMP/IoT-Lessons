@@ -769,5 +769,16 @@ You have now worked with some sensors. Pick any sensor from the box and try to g
 
 ---
 
+## Lesson 6 — Weekly Challenge: Fire and earthquake warning | บทที่ 6 — ความท้าทายประจำสัปดาห์: การเตือนภัยไฟไหม้และแผ่นดิน
+
+### Your challenge: Make a device to warn in case of natural disaster | ความท้าทายของคุณ: สร้างอุปกรณ์เพื่อเตือนภัยเมื่อเกิดภัยธรรมชาติ
+
+### Think about:
+### ลองคิดดู:
+- What do you want to detect? | คุณต้องการตรวจจับอะไร?
+- How do you warn people? | คุณจะเตือนผู้คนอย่างไร?
+- How about people who cannot hear or see? |  แล้วคนที่ไม่ได้ยินหรือมองไม่เห็นล่ะ?
+
+---
 
 </details>
